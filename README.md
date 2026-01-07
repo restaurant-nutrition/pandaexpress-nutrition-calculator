@@ -1,392 +1,287 @@
-# Panda Express Nutrition Calculator: Complete Guide to Calories, Macros & Meal Planning
+# Panda Express Nutrition Calculator: Calories, Macros & Meal Planning Guide
 
-> **Comprehensive nutrition database and calculator for all Panda Express menu items** - Track calories, macros, allergens, and build healthier meals with our complete nutrition facts guide.
+> Complete nutrition database and calculator for all Panda Express menu items. Calculate calories, track macros, and build healthier meals with accurate nutrition facts.
 
-## 📊 Overview
+## What This Tool Does
 
-This repository contains the complete **Panda Express nutrition database** with detailed information for every menu item including entrees, sides, appetizers, beverages, and kids' meals. Use this data to calculate your meal nutrition, track calories, monitor macros, and make informed dietary choices.
+This repository provides the complete **Panda Express nutrition database** in JSON format. Use it to calculate meal nutrition, track calories, monitor macros, and make informed dietary choices at Panda Express.
 
-**🔗 [Try our interactive Panda Express Nutrition Calculator](https://pandaexpressnutrition.net/)** - Build custom meals, calculate total calories, and get instant nutrition breakdowns.
-
----
-
-## 🎯 Quick Nutrition Facts
-
-### Most Popular Entrees - Calorie Comparison
-
-| Entree | Serving Size | Calories | Protein (g) | Carbs (g) | Fat (g) |
-|--------|--------------|----------|--------------|-----------|---------|
-| Orange Chicken | 5.7 oz | 380 | 14 | 45 | 18 |
-| Beijing Beef™ | 5.6 oz | 470 | 13 | 46 | 26 |
-| SweetFire Chicken Breast™ | 5.8 oz | 380 | 13 | 47 | 15 |
-| Kung Pao Chicken | 6.2 oz | 290 | 16 | 14 | 19 |
-| Grilled Teriyaki Chicken | 6 oz | 300 | 36 | 8 | 13 |
-| Broccoli Beef | 5.4 oz | 150 | 9 | 13 | 7 |
-| Mushroom Chicken | 5.7 oz | 170 | 12 | 11 | 9 |
-| Honey Walnut Shrimp | 3.7 oz | 360 | 13 | 35 | 23 |
-
-### Lowest Calorie Options (Under 200 Calories)
-
-| Item | Category | Calories | Protein (g) | Notes |
-|------|----------|----------|-------------|-------|
-| Mixed Veggies (Entree) | VEGGIES | 35 | 2 | WOK SMART option |
-| Broccoli Beef | BEEF | 150 | 9 | WOK SMART option |
-| Mushroom Chicken | CHICKEN | 170 | 12 | WOK SMART option |
-| Hot Szechuan Tofu* | VEGGIES | 140 | 6 | WOK SMART, Regional |
-| Country Style Bean Curd* | VEGGIES | 191 | 7 | Regional option |
-
-### Highest Protein Options
-
-| Item | Calories | Protein (g) | Protein per 100 cal |
-|------|----------|-------------|---------------------|
-| Grilled Teriyaki Chicken | 300 | 36 | 12.0g |
-| Teriyaki Chicken | 340 | 41 | 12.1g |
-| Grilled Asian Chicken | 300 | 36 | 12.0g |
-| Asian Chicken | 340 | 41 | 12.1g |
-| Shanghai Angus Steak™ | 310 | 22 | 7.1g |
+**[Try the Interactive Calculator →](https://pandaexpressnutrition.net/)**
 
 ---
 
-## 🍽️ Complete Menu Categories
+## How to Calculate Your Meal Nutrition
 
-### Sides & Rice Options
+Calculating your total meal nutrition is straightforward. Simply add up the calories and macros from each item you're eating.
 
-| Side Dish | Serving Size | Calories | Carbs (g) | Sodium (mg) |
-|-----------|--------------|----------|-----------|-------------|
-| Chow Mein | 9.4 oz | 510 | 65 | 980 |
-| Fried Rice | 9.3 oz | 520 | 82 | 790 |
-| Brown Steamed Rice | 10.4 oz | 420 | 86 | 15 |
-| White Steamed Rice | 8.1 oz | 380 | 87 | 0 |
-| Mixed Vegetables (Side) | 8.6 oz | 80 | 16 | 540 |
-| Chow Fun* | 8.5 oz | 410 | 73 | 1,110 |
+### Basic Formula
 
-**💡 Pro Tip:** White Steamed Rice has the lowest sodium (0mg) and is a great base for building lower-sodium meals. Brown Steamed Rice offers more fiber (4g) with similar calories.
+```
+Total Calories = Entree Calories + Side Calories + Sauce Calories + Beverage Calories
+```
 
-### Chicken Entrees
+**Example:**
 
-Panda Express offers a wide variety of chicken dishes ranging from 170 to 380 calories per serving:
+You order Orange Chicken with Fried Rice and Teriyaki Sauce:
 
-- **WOK SMART Options** (Under 300 calories): Mushroom Chicken (170 cal), String Bean Chicken Breast (190 cal)
-- **Grilled Options**: Grilled Teriyaki Chicken (300 cal, 36g protein), Grilled Asian Chicken (300 cal, 36g protein)
-- **Popular Favorites**: Orange Chicken (380 cal), Kung Pao Chicken (290 cal), Black Pepper Chicken (280 cal)
+```
+Orange Chicken:     380 calories
+Fried Rice:         520 calories
+Teriyaki Sauce:      70 calories
+─────────────────────────────────
+Total Meal:         970 calories
+```
 
-**🔗 [Calculate your complete meal nutrition](https://pandaexpressnutrition.net/)** - Combine entrees, sides, and sauces to see total calories and macros.
+### Calculating Macros
 
-### Beef & Pork Entrees
+Use the same approach for protein, carbs, and fat:
 
-| Entree | Calories | Protein (g) | Fat (g) | Notes |
-|--------|----------|-------------|---------|-------|
-| Broccoli Beef | 150 | 9 | 7 | WOK SMART |
-| Shanghai Angus Steak™ | 310 | 22 | 19 | Premium option |
-| Beijing Beef™ | 470 | 13 | 26 | Popular choice |
-| Chinese Spare Ribs* | 370 | 28 | 25 | Regional/Limited |
+```
+Total Protein = Entree Protein + Side Protein + Sauce Protein
+Total Carbs = Entree Carbs + Side Carbs + Sauce Carbs
+Total Fat = Entree Fat + Side Fat + Sauce Fat
+```
 
-### Seafood Options
+**Example:**
 
-| Seafood Item | Calories | Protein (g) | Allergens |
-|--------------|----------|-------------|-----------|
-| Crispy Shrimp (Entree) | 260 | 9 | Wheat, Soy, Fish, Shellfish |
-| Honey Walnut Shrimp | 360 | 13 | Wheat, Soy, Peanuts, Tree Nuts, Fish, Shellfish |
-| Golden Treasure Shrimp* | 360 | 14 | Wheat, Soy, Fish, Shellfish |
-| Steamed Ginger Fish* | 200 | 15 | Wheat, Soy, Fish, Shellfish |
+Your Orange Chicken meal breakdown:
 
-### Vegetarian & Tofu Options
+```
+Protein:  14g (chicken) + 12g (rice) + 0g (sauce) = 26g protein
+Carbs:    45g (chicken) + 82g (rice) + 16g (sauce) = 143g carbs
+Fat:      18g (chicken) + 16g (rice) + 0g (sauce) = 34g fat
+```
 
-Panda Express offers several plant-based options:
+### Daily Calorie Budget Formula
 
-- **Hot Szechuan Tofu*** - 140 calories, 6g protein (WOK SMART)
-- **Country Style Bean Curd*** - 191 calories, 7g protein
-- **Eggplant Tofu*** - 340 calories, 7g protein
-- **Mixed Veggies (Entree)** - 35 calories, 2g protein (Lowest calorie option!)
+If you're tracking daily calories, use this formula:
 
-*Regional/Limited time items
+```
+Remaining Calories = Daily Budget - Meal Calories
+```
 
----
+**Example:**
 
-## 🥗 WOK SMART Options (Under 300 Calories)
+Your daily budget is 2,000 calories. You eat a 970-calorie meal:
 
-Panda Express WOK SMART program features entrees under 300 calories with lean proteins and vegetables:
-
-1. **Mushroom Chicken** - 170 cal, 12g protein
-2. **Hot Szechuan Tofu*** - 140 cal, 6g protein
-3. **Broccoli Beef** - 150 cal, 9g protein
-4. **String Bean Chicken Breast** - 190 cal, 14g protein
-5. **Kung Pao Chicken** - 290 cal, 16g protein
-6. **Black Pepper Chicken** - 280 cal, 13g protein
-
-**💡 Meal Building Tip:** Pair a WOK SMART entree with White Steamed Rice (380 cal) and Mixed Vegetables (80 cal) for a complete meal under 760 calories.
+```
+Remaining: 2,000 - 970 = 1,030 calories left for the day
+```
 
 ---
 
-## 🍜 Appetizers & Soups
+## Popular Menu Items - Quick Reference
 
-### Appetizers
+### Top Entrees by Calories
 
-| Appetizer | Serving Size | Calories | Protein (g) |
-|-----------|--------------|----------|-------------|
-| Crispy Shrimp | 1.8 oz / 3 pcs | 130 | 5 |
-| Chicken Egg Roll | 3.3 oz / 3 pcs | 160 | 6 |
-| Chicken Potsticker | 3.3 oz / 3 pcs | 160 | 6 |
-| Cream Cheese Rangoon | 2.4 oz / 3 pcs | 190 | 5 |
-| Veggie Spring Roll | 3.4 oz / 2 rolls | 190 | 3 |
+| Item | Calories | Protein | Carbs | Fat |
+|------|----------|---------|-------|-----|
+| Orange Chicken | 380 | 14g | 45g | 18g |
+| Beijing Beef™ | 470 | 13g | 46g | 26g |
+| Grilled Teriyaki Chicken | 300 | 36g | 8g | 13g |
+| Kung Pao Chicken | 290 | 16g | 14g | 19g |
+| Broccoli Beef | 150 | 9g | 13g | 7g |
+| Mushroom Chicken | 170 | 12g | 11g | 9g |
 
-### Soups
+### Sides Comparison
 
-| Soup | Size | Calories | Protein (g) | Sodium (mg) |
-|------|------|----------|-------------|-------------|
-| Hot & Sour Soup | Cup (12.2 oz) | 120 | 7 | 880 |
-| Hot & Sour Soup | Bowl (17.4 oz) | 170 | 10 | 1,260 |
-
----
-
-## 🍯 Sauces & Condiments
-
-| Sauce | Serving Size | Calories | Carbs (g) | Sodium (mg) |
-|-------|--------------|----------|-----------|-------------|
-| Teriyaki Sauce | 1.8 oz | 70 | 16 | 380 |
-| Sweet & Sour Sauce | 1.8 oz | 70 | 21 | 115 |
-| Chili Sauce | 1 Packet (7g) | 10 | 2 | 125 |
-| Soy Sauce | 1 Packet (7g) | 5 | 0 | 375 |
-| Potsticker Sauce | 1 Packet (11.4g) | 10 | 3 | 290 |
-| Hot Mustard | 1 Packet (7g) | 10 | 0 | 115 |
-| Plum Sauce | 1 Packet (7g) | 15 | 3 | 55 |
-
-**⚠️ Sodium Alert:** Soy Sauce and Teriyaki Sauce are high in sodium. Use sparingly if watching sodium intake.
+| Side | Calories | Carbs | Sodium |
+|------|----------|-------|--------|
+| Chow Mein | 510 | 65g | 980mg |
+| Fried Rice | 520 | 82g | 790mg |
+| White Steamed Rice | 380 | 87g | 0mg |
+| Brown Steamed Rice | 420 | 86g | 15mg |
+| Mixed Vegetables | 80 | 16g | 540mg |
 
 ---
 
-## 🥤 Beverages - Complete Calorie Guide
+## WOK SMART Options (Under 300 Calories)
 
-### Regular Sodas
+These entrees are designed to be healthier choices:
 
-| Beverage | Size | Calories | Sugar (g) |
-|----------|------|----------|-----------|
-| Pepsi® | Small (22 oz) | 240 | 65 |
-| Pepsi® | Medium (30 oz) | 330 | 89 |
-| Pepsi® | Large (42 oz) | 460 | 124 |
-| Mountain Dew® | Small (22 oz) | 260 | 70 |
-| Mountain Dew® | Medium (30 oz) | 360 | 95 |
-| Mountain Dew® | Large (42 oz) | 510 | 133 |
-| Dr Pepper® | Small (22 oz) | 206 | 56 |
-| Dr Pepper® | Medium (30 oz) | 281 | 76 |
-| Dr Pepper® | Large (42 oz) | 394 | 106 |
+- **Mushroom Chicken** - 170 calories, 12g protein
+- **Broccoli Beef** - 150 calories, 9g protein
+- **Hot Szechuan Tofu** - 140 calories, 6g protein
+- **String Bean Chicken Breast** - 190 calories, 14g protein
+- **Kung Pao Chicken** - 290 calories, 16g protein
+- **Black Pepper Chicken** - 280 calories, 13g protein
 
-### Zero Calorie Options
+**Building a WOK SMART Meal:**
 
-- **Diet Pepsi®** - All sizes: 0 calories
-- **Sobe Lean®** - All sizes: 0 calories
-- **Lipton No Calorie Brisk Peach®** - All sizes: 0 calories
-- **China Mist Iced Tea®** - All sizes: 0 calories
-
-**💡 Health Tip:** Opt for zero-calorie beverages to save 200-500 calories per meal while staying hydrated.
+```
+Mushroom Chicken:    170 calories
+White Steamed Rice:  380 calories
+Mixed Vegetables:     80 calories
+─────────────────────────────────
+Total:               630 calories
+```
 
 ---
 
-## 👶 Kids' Meal Nutrition
+## Protein Efficiency Formula
 
-Kids' meals feature smaller portions with adjusted nutrition:
+To find the best protein-to-calorie ratio, use this formula:
 
-### Popular Kids' Entrees
+```
+Protein Efficiency = (Protein in grams ÷ Calories) × 100
+```
 
-| Entree | Calories | Protein (g) | Serving Size |
-|--------|----------|-------------|--------------|
-| Orange Chicken (Kids) | 260 | 10 | 4.1 oz |
-| Grilled Teriyaki Chicken (Kids) | 180 | 22 | 3.6 oz |
-| Kung Pao Chicken (Kids) | 200 | 11 | 4.4 oz |
-| Broccoli Beef (Kids) | 110 | 7 | 5.1 oz |
-| Beijing Beef™ (Kids) | 350 | 10 | 4.2 oz |
+**Example Comparison:**
 
-### Kids' Sides
+Grilled Teriyaki Chicken:
+```
+(36g ÷ 300 calories) × 100 = 12% protein efficiency
+```
 
-- **Chow Mein (Kids)** - 280 cal (5.2 oz)
-- **Fried Rice (Kids)** - 350 cal (6.2 oz)
-- **White Steamed Rice (Kids)** - 240 cal (5.1 oz)
-- **Brown Steamed Rice (Kids)** - 310 cal (7.8 oz)
+Orange Chicken:
+```
+(14g ÷ 380 calories) × 100 = 3.7% protein efficiency
+```
 
----
-
-## ⚠️ Allergen Information
-
-### Common Allergens in Panda Express Menu
-
-**Wheat & Soy:** Present in the majority of menu items due to soy sauce, noodles, and breading.
-
-**Peanuts:** Found in:
-- Kung Pao Chicken
-- Beijing Beef™
-- Fried Rice
-- Chow Fun
-- Mixed Vegetables
-- Orange Chicken (tree nuts also)
-- Honey Walnut Shrimp (tree nuts also)
-- Veggie Spring Roll
-
-**Tree Nuts:** Present in:
-- Orange Chicken
-- Honey Walnut Shrimp
-- Chocolate Chip Chunk Cookie
-
-**Fish & Shellfish:** All seafood items contain both fish and shellfish allergens.
-
-**Eggs:** Most items are egg-free, but check individual items.
-
-**Milk:** Found in:
-- Cream Cheese Rangoon
-
-**🔗 [Use our allergen filter tool](https://pandaexpressnutrition.net/)** to find safe options for your dietary restrictions.
+Higher percentages mean more protein per calorie, which is better for muscle building and satiety.
 
 ---
 
-## 📈 Nutrition Tips & Meal Planning
+## Meal Planning Examples
 
-### Building a Balanced Meal
+### 500-Calorie Meal
 
-1. **Choose a Lean Protein:** Grilled Teriyaki Chicken (36g protein, 300 cal) or Broccoli Beef (9g protein, 150 cal)
-2. **Add a Side:** White Steamed Rice (380 cal) or Mixed Vegetables (80 cal)
-3. **Include Vegetables:** Mixed Vegetables add fiber and nutrients with minimal calories
-4. **Watch Sauces:** Teriyaki and Sweet & Sour add 70 calories each
+```
+Broccoli Beef:       150 calories
+White Steamed Rice:   380 calories
+─────────────────────────────────
+Total:               530 calories
+```
 
-### Calorie Budget Examples
+### 700-Calorie Meal
 
-**500-Calorie Meal:**
-- Broccoli Beef (150 cal) + White Steamed Rice (380 cal) = 530 calories
+```
+Mushroom Chicken:     170 calories
+Chow Mein:           510 calories
+─────────────────────────────────
+Total:               680 calories
+```
 
-**700-Calorie Meal:**
-- Mushroom Chicken (170 cal) + Chow Mein (510 cal) = 680 calories
+### High-Protein Meal (50g+ protein)
 
-**900-Calorie Meal:**
-- Orange Chicken (380 cal) + Fried Rice (520 cal) = 900 calories
-
-**🔗 [Calculate your custom meal](https://pandaexpressnutrition.net/)** - Mix and match any items to see total nutrition instantly.
-
-### Low-Sodium Options
-
-If you're watching sodium intake:
-- **White Steamed Rice** - 0mg sodium
-- **Brown Steamed Rice** - 15mg sodium
-- **Mixed Veggies (Entree)** - 280mg sodium
-- **Broccoli Beef** - 520mg sodium
-
-Avoid: Chow Fun (1,110mg), Hot & Sour Soup Bowl (1,260mg), and items with heavy sauces.
-
-### High-Protein Meal Ideas
-
-**Meal 1:** Grilled Teriyaki Chicken (36g) + White Steamed Rice (7g) = **43g protein, 680 calories**
-
-**Meal 2:** Teriyaki Chicken (41g) + Brown Steamed Rice (9g) = **50g protein, 760 calories**
-
-**Meal 3:** Shanghai Angus Steak™ (22g) + Mixed Vegetables (2g) = **24g protein, 345 calories**
+```
+Teriyaki Chicken:    340 calories, 41g protein
+Brown Steamed Rice:  420 calories, 9g protein
+─────────────────────────────────────────────
+Total:               760 calories, 50g protein
+```
 
 ---
 
-## 🎯 Popular Meal Combinations
+## Sodium Tracking
 
-### Classic Combo Meals (Estimated)
+Many Panda Express items are high in sodium. Here's how to calculate your meal's sodium:
 
-**2-Entree Plate:**
-- Orange Chicken (380) + Beijing Beef™ (470) + Chow Mein (510) = **1,360 calories**
+```
+Total Sodium = Entree Sodium + Side Sodium + Sauce Sodium
+```
 
-**3-Entree Plate:**
-- Kung Pao Chicken (290) + Broccoli Beef (150) + Mushroom Chicken (170) + Fried Rice (520) = **1,130 calories**
+**Example:**
 
-**WOK SMART Combo:**
-- Mushroom Chicken (170) + Broccoli Beef (150) + White Steamed Rice (380) + Mixed Vegetables (80) = **780 calories**
+```
+Orange Chicken:      620mg sodium
+Fried Rice:          790mg sodium
+Teriyaki Sauce:      380mg sodium
+─────────────────────────────────
+Total:             1,790mg sodium
+```
 
-**🔗 [Build your perfect combo](https://pandaexpressnutrition.net/)** - Our calculator handles multiple entrees, sides, and sauces automatically.
+**Daily Sodium Limit:** Most adults should stay under 2,300mg per day. One meal can easily exceed this.
 
----
-
-## 📊 Nutrition Facts Summary
-
-### Average Nutrition by Category
-
-| Category | Avg Calories | Avg Protein | Avg Carbs | Avg Fat |
-|----------|-------------|-------------|-----------|---------|
-| Chicken Entrees | 290 | 20 | 18 | 14 |
-| Beef Entrees | 310 | 15 | 25 | 17 |
-| Seafood | 295 | 12 | 26 | 18 |
-| Vegetarian/Tofu | 216 | 6 | 15 | 12 |
-| Sides | 387 | 10 | 65 | 12 |
-| Appetizers | 162 | 5 | 19 | 6 |
+**Low-Sodium Options:**
+- White Steamed Rice: 0mg
+- Brown Steamed Rice: 15mg
+- Mixed Veggies (Entree): 280mg
 
 ---
 
-## 🔍 How to Use This Data
+## Allergen Information
 
-This repository provides the complete **Panda Express nutrition database** in JSON format. You can:
+**Common Allergens:**
 
-1. **Calculate Meal Totals:** Sum calories, macros, and nutrients across multiple items
-2. **Filter by Dietary Needs:** Find low-calorie, high-protein, or allergen-free options
-3. **Plan Ahead:** Use nutrition data to pre-plan meals that fit your goals
-4. **Track Macros:** Monitor protein, carbs, and fat intake from Panda Express meals
+- **Wheat & Soy:** Found in most items (sauces, noodles, breading)
+- **Peanuts:** Kung Pao Chicken, Beijing Beef, Fried Rice, Orange Chicken
+- **Tree Nuts:** Orange Chicken, Honey Walnut Shrimp
+- **Fish & Shellfish:** All seafood items
+- **Milk:** Cream Cheese Rangoon only
 
-**🔗 [Access our interactive calculator](https://pandaexpressnutrition.net/)** for an easy-to-use interface with all this data plus meal planning tools.
+**[Check Allergen Filters →](https://pandaexpressnutrition.net/)**
 
 ---
 
-## 📝 Data Source & Accuracy
+## Beverage Calories
 
-This nutrition database is compiled from official Panda Express nutrition information. All values are per serving size as listed. Note that:
+Beverages can add significant calories. Here's the math:
 
+**Regular Sodas:**
+- Small (22 oz): 240-260 calories
+- Medium (30 oz): 330-360 calories
+- Large (42 oz): 460-510 calories
+
+**Zero-Calorie Options:**
+- Diet Pepsi (all sizes)
+- Sobe Lean (all sizes)
+- Unsweetened iced tea
+
+**Calorie Savings:**
+
+```
+If you skip a large soda (460 calories) and choose water instead:
+Daily savings: 460 calories
+Weekly savings: 3,220 calories (nearly 1 pound of fat)
+```
+
+---
+
+## Data Source & Accuracy
+
+This nutrition database is compiled from official Panda Express nutrition information. All values are per standard serving size.
+
+**Important Notes:**
 - Serving sizes may vary slightly by location
-- Regional items (marked with *) may not be available at all locations
-- WOK SMART items are specifically designed to be under 300 calories
-- Allergen information is based on ingredient lists and cross-contamination risks
-
-**Last Updated:** Based on current Panda Express menu offerings.
+- Regional items (marked with *) may not be available everywhere
+- Actual values can vary based on preparation
+- Always consult healthcare professionals for personalized dietary advice
 
 ---
 
-## 🚀 Quick Links
+## How to Use This Repository
 
-- **🔗 [Panda Express Nutrition Calculator](https://pandaexpressnutrition.net/)** - Interactive meal builder and calorie calculator
-- **📊 Complete Nutrition Database** - This repository contains the full JSON dataset
-- **🥗 Meal Planning Guide** - Use the tables above to plan balanced meals
-- **⚠️ Allergen Guide** - Review allergen information before ordering
+1. **Calculate Meal Totals:** Add up calories and macros from multiple items
+2. **Find Low-Calorie Options:** Filter items under your calorie budget
+3. **Track Protein:** Identify high-protein options for fitness goals
+4. **Monitor Sodium:** Calculate total sodium to stay within daily limits
+5. **Plan Ahead:** Pre-calculate meals before ordering
 
----
+**[Use Our Interactive Calculator →](https://pandaexpressnutrition.net/)**
 
-## 💡 Pro Tips
-
-1. **Ask for Light Sauce:** Request less sauce to reduce calories and sodium
-2. **Mix & Match:** Combine a high-protein entree with lower-calorie sides
-3. **Skip the Drink:** Save 200-500 calories by choosing water or zero-calorie options
-4. **Use WOK SMART:** Look for the WOK SMART designation for healthier options
-5. **Portion Control:** Consider sharing larger entrees or saving half for later
-
-**🔗 [Try our calculator](https://pandaexpressnutrition.net/)** to experiment with different combinations and find meals that fit your nutrition goals.
+The calculator automatically handles all formulas and provides instant results for any meal combination.
 
 ---
 
-## 📚 Additional Resources
+## Quick Tips
 
-- **Calorie Tracking:** Use this data with popular apps like MyFitnessPal or Lose It!
-- **Macro Counting:** Perfect for those following IIFYM (If It Fits Your Macros)
-- **Meal Prep Planning:** Calculate nutrition for meal prep containers
-- **Dietary Restrictions:** Filter by allergens or dietary preferences
-
----
-
-## 🤝 Contributing
-
-This is a community resource for Panda Express nutrition information. If you notice any discrepancies or have updates, please open an issue or submit a pull request.
+1. **Choose WOK SMART entrees** for lower calories
+2. **Skip sugary drinks** to save 200-500 calories
+3. **Request light sauce** to reduce calories and sodium
+4. **Add vegetables** for fiber with minimal calories
+5. **Calculate before ordering** to stay within your budget
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 
-Nutrition information is provided for informational purposes only. Actual values may vary based on preparation methods, serving sizes, and location. Always consult with a healthcare professional for personalized dietary advice.
+Nutrition information is provided for informational purposes only. Actual values may vary based on preparation methods, serving sizes, and location. This data is not a substitute for professional medical or nutritional advice.
 
-**For the most accurate and up-to-date nutrition information, visit [Panda Express Nutrition Calculator](https://pandaexpressnutrition.net/).**
-
----
-
-## 📄 License
-
-This nutrition data is provided as a public resource. Menu items and nutrition facts are property of Panda Express.
+**For accurate, up-to-date calculations, visit [Panda Express Nutrition Calculator](https://pandaexpressnutrition.net/).**
 
 ---
 
-**Made with ❤️ for health-conscious Panda Express fans**
+**Made for health-conscious Panda Express customers**
 
-**🔗 [Visit Panda Express Nutrition Calculator](https://pandaexpressnutrition.net/) to calculate your meals, track calories, and plan healthier options.**
+**[Calculate Your Meal Now →](https://pandaexpressnutrition.net/)**
